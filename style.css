@@ -1,0 +1,347 @@
+*{
+  margin:0px;
+  padding: 0px;
+}
+html{
+  scroll-behavior:smooth;
+}
+body{
+  font-family: "Times New Roman", Times, serif ;
+}
+
+/* style for navbar */
+#navbar{
+   display: flex;
+   position: sticky;
+   top: 0;
+   
+}
+
+#navbar img{
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+#navbar ul{
+  display: flex;
+  margin-left: 60px;
+  margin-top: 5px;
+}
+#navbar ul li{
+    list-style-type: none;
+    margin-top: 15px;
+}
+
+#navbar ul li a{
+     text-decoration: none;
+     color: white;
+     margin:24px;
+     padding:5px;
+     font-size:0.8rem;
+}
+
+#navbar ul li a:hover{
+    background-color: white;
+    color: black;
+    border-radius:18px;
+    cursor: pointer;
+}
+
+#navbar::before{
+    content:"";
+    position: absolute;
+    background-color:black ;
+    width: 100%;
+    height:55px;
+    z-index:-1 ;
+    opacity:0.45;
+}
+
+/* this style is for home */
+
+#home{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+#home::before{
+    content:"";
+    position: absolute;
+    background-image:url('image/lunch-box.jpg') ;
+    background-size: cover;
+    width: 100%;
+    height:70%;
+    z-index:-1 ;
+    opacity:0.8;
+}
+
+#home h1{
+    font-size: 3rem;
+    margin-top:80px;
+    margin-bottom: 24px;
+    text-shadow:2px 2px 6px black;
+}
+
+#home p{
+   font-size:1.1rem;
+   text-shadow:1px 1px 3px black;
+}
+
+#btn{
+   margin-top: 20px;
+   font-size: 0.8rem;
+   border:1px solid #5a40ed ;
+   border-radius:8px;
+   padding:8px;
+   background-color:  #2c0fd1;
+   color: white;
+}
+#btn:hover{
+   background-color:#5a40ed ;
+   cursor: pointer;
+}
+
+/* Our plans */
+
+#plans{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top:120px;
+  text-decoration: underline;
+}
+
+#offer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:50px;
+}
+
+#offer tr td img{
+  width:400px;
+}
+
+#offer tr td {
+   font-size: 2rem;
+   text-align: center;
+}
+#offer tr td p{
+     margin: 15px;
+     color: #20ab45 ;
+}
+
+/* second table */
+
+#chart{
+   display:absolute;
+   margin-left:100px;
+   margin-top: 50px;
+   
+   
+}
+#chart td{
+    background-color:#d3ebe9 ;
+    margin: 15px;
+    padding: 5px;
+    height: 30px;
+    width:250px;
+    text-align: center;
+}
+
+#chart th{
+  height: 25px;
+    background-color:#b2d4d2;
+}
+/* our plans ends */
+
+/* REVIEW */
+
+#review-heading{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top:50px;
+  text-decoration: underline;
+}
+
+#review{
+  background-color:#fcfdff;
+  padding: 10px;
+}
+
+#review-box{
+   display: flex;
+   margin: 10px;
+}
+
+.r-box{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   border: 2px solid black;
+   border-radius:8px;
+   background-color: #fafffc;
+   width:400px;
+   margin:24px;
+   padding:5px;
+   
+}
+
+.r-box img{
+    width: 100px;
+}
+/* reviews ends */
+
+/* why to choose us */
+
+#whyus-heading{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top:1em;
+  text-decoration: underline;
+}
+
+#choose-us{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 20px;
+   flex-wrap:wrap;
+}
+
+.whyus{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+   border: 2px solid orange;
+   margin: 10px;
+   border-radius:8px;
+   width:30% ;
+   color: white;
+}
+
+ div1{
+    background-image:url('image/vegetable2.jpg') ;
+    background-size: cover;
+    background-position:center;
+    width:400px;
+    height:300px;
+  
+}
+
+div2{
+    background-image:url('image/lunchb2.jpg') ;
+    background-size: cover;
+    background-position:center;
+    width:400px;
+    height:300px;
+  
+}
+
+div3{
+    background-image:url('image/womank.jpg') ;
+    background-size: cover;
+    background-position:center;
+    width:400px;
+    height:300px;
+  
+}
+
+.whyus h4{
+   margin: 10px;
+   font-size:1.5rem;
+   text-shadow:2px 2px 5px black ;
+}
+.whyus p{
+   margin: 5px;
+   padding: 5px;
+   font-size:1rem;
+   text-shadow:2px 2px 3px black ;
+}
+
+/* why to choose us ends */
+
+/* contact us */
+.contact{
+   background-color:#b2d4d2;
+   height:380px;
+}
+
+.contact h2{
+    display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-decoration: underline;
+}
+
+#form{
+  display: flex;
+  margin-left: 30px;
+  text-align: center;
+  width:25em;
+  padding:5px;
+  border: 2px solid white;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow:6px 6px 3px 2px grey;
+}
+
+#form h3{
+   margin-bottom: 10px;
+}
+
+#social img{
+  width: 50px;
+}
+#contact{
+   display: flex;
+}
+
+#contact table{
+  margin-top:10px;
+  height:40px;
+  width: 20px;
+   margin-left:200px ;
+   text-align: center;
+}
+
+#contact table tr td{
+  padding:4px;
+  border: 2px solid white;
+  border-radius: 8px;
+}
+
+ptable{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+ptable h3{
+  margin-left:200px;
+  color: white;
+  text-shadow:3px 3px 3px grey;
+}
+
+
+
+
+
+
